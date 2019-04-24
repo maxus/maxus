@@ -1,0 +1,17 @@
+#container {
+  margin-top: 56px;
+
+  flex: 1;
+  overflow: overlay;
+  position: relative;
+}
+#main {
+  box-sizing: border-box;
+  display: block;
+  height: inherit;
+  margin: 0 auto;
+  max-width: calc(680px + 3 * 2px);
+  min-width: 550px;
+  position: relative;
+  width: 96%;
+}

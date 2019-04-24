@@ -1,0 +1,27 @@
+@import url(~@material/tab/dist/mdc.tab.min.css);
+@import url(~@material/tab-bar/dist/mdc.tab-bar.min.css);
+@import url(~@material/tab-scroller/dist/mdc.tab-scroller.min.css);
+@import url(~@material/tab-indicator/dist/mdc.tab-indicator.min.css);
+#header {
+  min-height: 40px;
+  /* padding-bottom: 8px; */
+  border-bottom: 1px solid #e0e0e0;
+  /* height: 40px; */
+  max-height: initial;
+}
+#header .mdc-tab {
+  padding: 0 12px;
+  height: 40px;
+  font-size: 13px;
+  text-transform: none;
+}
+.animes #dialog-title {
+  padding-bottom: 8px;
+}
+.hidden {
+  display: none !important;
+}
+#addAnimes,
+#addEpisode {
+  padding-top: 8px;
+}

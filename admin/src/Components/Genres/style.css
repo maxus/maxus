@@ -1,0 +1,19 @@
+@import url(~@material/chips/dist/mdc.chips.min.css);
+@import url(~@material/menu/dist/mdc.menu.min.css);
+@import url(~@material/form-field/dist/mdc.form-field.min.css);
+@import url(~@material/checkbox/dist/mdc.checkbox.min.css);
+.chip-shaped {
+  border-radius: 4px;
+}
+.mdc-chip__checkmark {
+  height: 24px;
+}
+#select-genres {
+  bottom: 40px !important;
+}
+#check_box--genre {
+  width: 150px;
+}
+#genre .mdc-chip__checkmark i {
+  color: #5f6368;
+}

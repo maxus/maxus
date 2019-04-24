@@ -1,0 +1,71 @@
+:host {
+  --mdc-theme-primary: #1a73e8;
+}
+/* @import url(~@material/textfield/dist/mdc.textfield.min.css); */
+.movies,
+.animes {
+  padding-top: 16px;
+  padding-bottom: 25px;
+}
+#title {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  margin: 21px auto 6px;
+  padding-bottom: 4px;
+  padding-top: 8px;
+  width: 100%;
+}
+h2.start {
+  align-items: center;
+  flex: auto;
+}
+.dialog-input {
+  margin-bottom: 16px;
+  width: 264px;
+}
+/* REMOVE DIALOG */
+#remove .mdc-dialog__surface {
+  border-radius: 8px;
+  color: #5f6368;
+}
+#remove-title {
+  color: #000;
+
+  display: flex;
+
+  flex-shrink: 0;
+  font: 400 18px Roboto;
+  padding: 23px 24px 1px 24px;
+}
+#remove-title div {
+  box-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+#remove-body {
+  box-flex: 2;
+  flex-grow: 2;
+  flex-shrink: 2;
+  display: block;
+  font: 400 14px/20px Roboto;
+  padding: 0 24px;
+  overflow-y: auto;
+  position: relative;
+  margin-top: 16px;
+}
+#remove-action {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 24px;
+  display: flex;
+  flex-shrink: 0;
+}
+#remove-action > button > span {
+  letter-spacing: 0.25px;
+  border-radius: 4px;
+  text-transform: none;
+}

@@ -1,0 +1,95 @@
+@import "~@material/menu/dist/mdc.menu.min.css";
+@import "~@material/list/dist/mdc.list.min.css";
+@import "~@material/menu-surface/dist/mdc.menu-surface.min.css";
+#content {
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  flex: none;
+  margin: 12px auto;
+  min-height: 103px;
+  position: relative;
+  max-width: 680px;
+}
+#content.is-active {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+}
+#poster {
+  align-self: center;
+  flex: none;
+  justify-content: center;
+  margin: 0 24px;
+}
+#details {
+  border-inline-start: 1px #d8d8d8 solid;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  padding-bottom: 12px;
+  padding-inline-end: 16px;
+  padding-inline-start: 24px;
+  padding-top: 16px;
+}
+#link {
+  font-weight: 500;
+  word-break: break-all;
+  max-width: 100%;
+  color: #1a73e8;
+
+  display: inline-block;
+}
+#description {
+  margin-top: 10px;
+  min-height: 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #5f6368;
+}
+#more-wrapper {
+  align-self: flex-start;
+  margin: 0;
+}
+#more-wrapper .mdc-list-item {
+  height: 25px;
+  font-size: 13px;
+}
+
+#more-wrapper .mdc-menu-surface {
+  z-index: 1;
+}
+
+#more-wrapper > button {
+  --mdc-ripple-top: 8px !important;
+  color: #5f6368;
+  height: 32px;
+  margin-inline-end: 8px;
+  margin-inline-start: 0;
+  margin-top: 8px;
+  width: 32px;
+  padding: 5px;
+}
+#more-wrapper > button > svg {
+  height: 20px;
+  width: 20px;
+}
+#footer {
+  margin-top: 10px;
+  min-height: 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #424446;
+}
+#poster > img {
+  height: 80px;
+  width: 52px;
+}
+.dev-list > li {
+  height: 32px;
+  font-size: 13px;
+}

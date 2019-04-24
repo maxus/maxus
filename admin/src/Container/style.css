@@ -1,0 +1,145 @@
+:root {
+  --mdc-theme-primary: #1a73e8;
+}
+@import url(~@material/dialog/dist/mdc.dialog.min.css);
+@import url(~@material/linear-progress/dist/mdc.linear-progress.min.css);
+@import url(~@material/snackbar/dist/mdc.snackbar.min.css);
+
+.primary-button,
+.secondary-button {
+  border-radius: 4px;
+  flex-shrink: 0;
+  font-weight: 500;
+  font-size: 13px;
+  height: 32px;
+
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: none;
+
+  letter-spacing: 0;
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.primary-button {
+  --mdc-theme-primary: #1a73e8;
+  --mdc-theme-on-primary: #1a73e8;
+  --mdc-ripple-fg-opacity: 0.1 !important;
+  border: 1px solid rgb(218, 220, 224);
+}
+.secondary-button {
+  --mdc-ripple-fg-opacity: 0.32;
+  --mdc-theme-on-primary: #1a73e8;
+  --mdc-theme-primary: white;
+  background-color: #1a73e8 !important;
+  border: none;
+  color: white;
+}
+.secondary-button:disabled {
+  background-color: rgba(241, 243, 244, 1) !important;
+  border-color: transparent;
+  color: rgb(128, 134, 139);
+}
+.primary-button:active {
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 3px 6px 2px rgba(60, 64, 67, 0.15);
+}
+.primary-button:hover {
+  background-color: rgba(66, 133, 244, 0.04);
+  border-color: rgb(210, 227, 252);
+}
+.primary-button:focus::before,
+.primary-button:hover::before {
+  transition: none;
+  opacity: 0;
+}
+.header-actions {
+  align-items: center;
+  display: flex;
+  min-height: 48px;
+  padding: 0 3px;
+}
+/* Dialog */
+
+.dev-dialog .mdc-dialog__surface {
+  width: 512px;
+  border-radius: 8px;
+}
+#dialog-title {
+  color: #202124;
+  flex: 1;
+  font-size: 15px;
+  line-height: 1;
+  padding-bottom: 16px;
+  padding-inline-end: 20px;
+  padding-inline-start: 20px;
+  padding-top: 20px;
+}
+#dialog-body {
+  color: #5f6368;
+  padding-bottom: 0;
+  padding-inline-end: 20px;
+  padding-inline-start: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 450px;
+  /* FIX ME LATER */
+  min-height: 450px;
+  overflow: auto;
+}
+#dialog-button {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 16px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
+  padding-top: 24px;
+}
+#dialog-button button {
+  margin-inline-end: 8px;
+}
+/* Poster image */
+
+.poster-action-button {
+  background-color: transparent;
+  border: 0 none;
+  cursor: pointer;
+  font-size: 0 !important;
+  overflow: hidden;
+  padding: 0;
+  vertical-align: middle;
+  outline: 0;
+}
+/* Preloader */
+
+.progressbar .mdc-linear-progress {
+  border-radius: 8px 8px 0 0;
+  background-size: 20px 8px;
+  height: 8px;
+}
+.progressbar {
+  height: 4px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+.dev-dialog[loading="true"] #modal-overlay {
+  outline: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  border-radius: 8px;
+  position: absolute;
+  background: #fafafa;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+#modal-overlay {
+  opacity: 0;
+}
