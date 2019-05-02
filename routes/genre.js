@@ -7,7 +7,7 @@ const genre = require("../models/genre");
 router.get("/movie", (req, res) => {
   genre.find({"type":"movie"},{"type":0}).then(doc => {
     res.json(doc);
-  });
+  }); 
 });
 //ADDING GENRES
 router.post("/add", (req, res) => {

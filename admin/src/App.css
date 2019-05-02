@@ -11,7 +11,7 @@
   height: inherit;
   margin: 0 auto;
   max-width: calc(680px + 3 * 2px);
-  min-width: 550px;
+  /* min-width: 550px; */
   position: relative;
   width: 96%;
 }

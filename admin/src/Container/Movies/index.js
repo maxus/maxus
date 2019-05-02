@@ -297,7 +297,7 @@ class Movies extends Component {
                   input={true}
                   name="keyword"
                   type="text"
-                />
+                /> 
                 <Input label="Link" input={true} name="link" type="text" />
                 <Image title="Banner Image" poster={false} />
                 <Image title="Poster Image" poster={true} />
