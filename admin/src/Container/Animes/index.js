@@ -137,7 +137,6 @@ class Animes extends Component {
                     input={true}
                     name="title"
                     type="text"
-                    ref={this.input}
                   />
                 </div>
                 <div id="addEpisode" className={show ? "hidden" : ""}>
