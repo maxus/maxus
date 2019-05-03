@@ -14,3 +14,4 @@ yarn-error.log*
 .npm/
 node_modules
 package-lock.json
+uploads
