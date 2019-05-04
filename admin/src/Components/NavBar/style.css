@@ -257,11 +257,37 @@ paper-spinner-lite {
   margin-bottom: 8px;
   margin-top: 8px;
 }
-#moreActionsContainer {
-display: inline-block;
-  height: 32px;
-  width: 32px;
+/* AVATAR BUTTONS */
+#buttons {
+  display: flex;
+  flex-direction: row-reverse;
 }
-#moreActionsContainer >button {
-  padding: 6px;
+#avatar-btn {
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+
+  padding: 1px 6px;
+}
+.avatar-img-container {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  /* margin: 0 8px; */
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+}
+.avatar-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: none;
+  max-width: 100%;
+}
+.avatar-img:hover {
+  background-color: rgba(60, 64, 67, 0.08);
 }

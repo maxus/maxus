@@ -56,9 +56,8 @@ class NavBar extends Component {
     }
   };
   render() {
-    const {browseTitle}=this.props;
+    const { browseTitle } = this.props;
     return (
-      
       <div>
         <div
           id="toolbar"
@@ -107,7 +106,9 @@ class NavBar extends Component {
                     type="search"
                     autoFocus={true}
                     spellCheck="false"
-                    placeholder={`Search ${browseTitle ? browseTitle.toLowerCase():""}`}
+                    placeholder={`Search ${
+                      browseTitle ? browseTitle.toLowerCase() : ""
+                    }`}
                     value={this.state.searchValue}
                     onChange={e => {
                       this.setState({
@@ -138,15 +139,16 @@ class NavBar extends Component {
               </div>
             </div>
             <div id="rightContent">
-            <div id="moreActionsContainer">
-                  <button
-                    className="paper-button mdc-icon-button"
-                  >
-                   <div className="icon">
-                   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+              <div id="buttons">
+                <button id="avatar-btn">
+                  <div className="avatar-img-container">
+                    <img
+                      className="avatar-img"
+                      src="https://yt3.ggpht.com/-FThbTS-wmx8/AAAAAAAAAAI/AAAAAAAAAKA/r93O0-c9AJk/s88-mo-c-c0xffffffff-rj-k-no/photo.jpg"
+                    />
                   </div>
-                  </button>
-                </div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
